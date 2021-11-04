@@ -1,0 +1,66 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.personagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid;
+
+  width: 160px;
+  height: 250px;
+
+  margin: 10px 0 10px;
+}
+
+.personagem__nome {
+  max-width: 15ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  text-align: justify;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  margin-bottom: 5px;
+}
+
+.personagem__especie {
+  color: #0000ff;
+
+  margin-bottom: 2.5px;
+}
+
+.personagem__foto {
+  display: block;
+
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (min-width: 700px) {
+  .personagem {
+    width: 180px;
+    height: 230px;
+  }
+}
